@@ -1,5 +1,5 @@
-const API_KEY = 'AIzaSyBeKRHRWUI9D763MGBo9h25PWkGA9IK3Hw';  // Înlocuiește cu API Key-ul tău
-const BASE_URL = 'https://www.googleapis.com/youtube/v3/videos';
+const API_KEY = '';  // Înlocuiește cu API Key-ul tău
+const BASE_URL = '';
 
 export const getVideoDetails = async (videoId: string) => {
   const url = `${BASE_URL}?id=${videoId}&key=${API_KEY}&part=snippet,contentDetails,statistics`;
