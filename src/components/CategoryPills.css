@@ -1,0 +1,38 @@
+
+/* Stiluri pentru butoanele de categorie */
+.category-pills {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .pill {
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .pill:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .pill.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  /* Stiluri pentru video grid */
+  .video-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 20px;
+  }
+  

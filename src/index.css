@@ -1,0 +1,25 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  background-color: transparent;
+  width: 2px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary-dark);
+  border-radius: 9999px; /* equivalent to rounded-full */
+}
+
+.scrollbar-hidden::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.scrollbar-hidden:hover::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary-border);
+}

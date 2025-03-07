@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",  // Modifică la ES6 pentru Node.js
+    "module": "CommonJS",  // Folosește CommonJS pentru module
+    "moduleResolution": "node",  // Folosește rezolvarea modulelor de tip Node.js
+    "esModuleInterop": true,  // Permite importurile de module CommonJS
+    "skipLibCheck": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,  // Permite importarea fișierelor JSON
+    "outDir": "./dist",  // Specifică directorul de ieșire pentru fișierele compilate
+    "rootDir": "./src",  // Directorul rădăcină pentru fișierele sursă
+    "lib": ["ES2020"],
+    "allowJs": true  // Permite fișierele JavaScript să fie incluse
+  },
+  "include": ["src/**/*.ts"],  // Include toate fișierele TypeScript din folderul src
+  "exclude": ["node_modules"]  // Exclude folderul node_modules
+}
